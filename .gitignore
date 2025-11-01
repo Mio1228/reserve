@@ -1,0 +1,3 @@
+# 機密ファイル除外
+db_config.php
+/admin/.env
