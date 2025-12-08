@@ -1,0 +1,468 @@
+body{
+    margin: 0px;
+}
+
+/* ヘッダー */
+header{
+    width:100%;
+    height:300px;
+    margin: 0px;
+    background-image: url(../img/img8.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    position:relative;
+    margin-bottom:10px;
+}
+
+.title{
+    font-size:25px;
+    text-align: center;
+    width:25%;
+    padding: 10px;
+    margin: 10px;
+    position:absolute;
+    top:10px;
+    color:white;
+    background-color: #659ad2cf;
+}
+
+#nav-pc{
+    height:10%;
+    background-color: rgba(255, 255, 255, 0.883);
+    position:absolute;
+    bottom:8px;
+    right:0px;
+    padding:10px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    padding:10px;
+    color:#659AD2;
+    text-decoration: none;
+}
+
+a:hover{
+    cursor: pointer;
+    color:#d9be66
+}
+
+.log{
+    display:block;
+    width:50%;
+    
+}
+.log1{
+    width: 50%;
+    height:auto;
+    margin-left:30px;
+    padding:10px 10px 0px 10px;
+    object-fit:contain;
+}
+
+ul{
+    display:block;
+    width:100%;
+    margin:0px;
+    padding:0px 0px 0px 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+li{
+    list-style: none;
+    text-align: center;
+}
+
+a{
+    color:#659AD2;
+    text-decoration: none;
+}
+
+a:hover{
+    cursor: pointer;
+    color:#d9be66
+}
+
+#nav-sp{
+    display:none;
+}
+
+#log-sp{
+    display: none;
+}
+
+#menu-sp{
+    display:none;
+}
+
+/* レスポンシブ */
+@media screen and (max-width:480px){
+    body{
+        width: 100%;
+    }
+
+    header{
+        height:200px;
+    }
+
+    #head{
+        height:200px;
+        width:100%;
+        object-fit: contain;
+        position:relative;
+    }
+
+    .title{
+        width:45%;
+    }
+
+    #nav-pc{
+        display:none;
+    }
+
+    #log-sp{
+        display:block;
+        height:50px;
+        width: 30%;
+        margin: 10px;
+        position: absolute;
+        
+    }
+
+    #menu-sp{
+        display: block;
+        padding: 0px;
+        border:none;
+        width:50px;
+        height:50px;
+        object-fit: contain;
+        position:fixed;
+        right:10px;
+        margin: 10px;
+    }
+
+    .frame1{
+        width:50px;
+        height:50px;
+    }
+
+    .frame2{
+        width:50px;
+        height:50px;
+    }
+
+    #nav-sp{
+        width:200px;
+        height:200;
+        background-color:rgba(107, 176, 255, 0.85);
+        right:10px;
+        margin:10px;
+        position:fixed;
+    }
+
+    #close{
+        height:50px;
+        margin-left:150px;
+        right:10px;
+        padding:0px;
+        border: none;
+    }
+
+    ul{
+    width:100%;
+    margin:0px;
+    padding:0px 0px 10px 0px;
+    display: flex;
+    flex-direction: column;
+    }
+
+    .rink{
+        color:white;
+    }
+
+    .rink:hover{
+    cursor: pointer;
+    color:#d9be66;
+    text-decoration:underline solid 1px #d9be66;
+    }
+}
+
+
+/* 中身 */
+h1{
+    display:block;
+    text-align:center;
+    color:#5a7ada;
+    padding:5px;
+    margin:10px;
+}
+
+/* コンセプト */
+.concept-pc{
+    width:80%;
+    background-color:#95c3f3; 
+    font-size:15px;
+    color:white;
+    text-align: center;
+    padding:5px;
+    margin:10px auto 70px auto;
+}
+
+h3{
+    border-bottom: solid 1px white;
+    margin:10px 30px;
+}
+
+.concept-sp{
+    display: none;
+}
+
+/* レスポンシブ */
+@media screen and (max-width:480px){
+    .concept-pc{
+        display: none;
+    }
+
+    .concept-sp{
+        display: block;
+        width:80%;
+        background-color:#95c3f3; 
+        font-size:10px;
+        color:white;
+        text-align: left;
+        padding:5px 10px;
+        margin:10px auto 30px auto;
+    }
+
+    h3{
+        border-bottom: solid 1px white;
+        margin:10px 30px;
+        text-align: center;
+    }
+}
+
+/* こだわり */
+.pride{
+    margin-bottom: 70px;
+}
+
+.point{
+    display:flex;
+    flex-direction: column;
+    margin:20px;
+}
+.sub-title{
+    height:70px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding:0px 20px;
+    color:#ebad6e;
+}
+
+.number{
+    width:50px;
+    height: 50px;
+    object-fit: contain;
+    padding:10px;
+}
+
+.point-c{
+    display:block;
+    margin-left:50px;
+}
+
+h2{
+    border-bottom:dashed 1px #ebad6e;
+    padding:0px 10px;
+}
+
+.h2-pc{
+    border-bottom:dashed 1px #ebad6e;
+    padding:0px 10px;
+}
+
+.h2-sp{
+    display: none;
+}
+
+/* レスポンシブ */
+@media screen and (max-width:480px){
+    h2{
+        border-bottom:dashed 1px #ebad6e;
+        padding:0px 10px;
+        font-size:20px;
+    }
+
+    .h2-pc{
+        display: none;
+    }
+
+    .h2-sp{
+        display: block;
+        border-bottom:dashed 1px #ebad6e;
+        padding:0px 10px;
+        font-size:20px;
+        margin-bottom:5px;
+    }
+
+    .point{
+        margin:20px 10px;
+    }
+
+    .sub-title{
+        padding:0px;
+    }
+
+    .point-c{
+        display:block;
+        padding:5px 10px;
+        margin:0px 10px;
+    }    
+}
+
+
+/* 院長挨拶 */
+.greed{
+    background-color: #95c2f341;
+    background-size: none;
+    padding-top:10px;
+    margin-bottom: 70px;
+}
+
+.greed-c{
+    display:block;
+    width:80%;
+    padding:20px 10px;
+    margin:0px auto;
+}
+
+
+/* スタッフ */
+.staff{
+    margin:10px;
+}
+
+.staffs{
+    display:flex;
+    flex-direction: row;
+    width: 95%;
+    align-items: center;
+    margin-bottom:10px;
+    padding:15px;
+}
+
+.face{
+    width:250px;
+    height:250px;
+    object-fit: contain;
+    margin:20px;
+}
+
+.name{
+    border-bottom:dotted 1px black;
+    padding:5px;
+}
+
+.hobies{
+    padding-left:10px;
+    font-weight: lighter;
+}
+
+.coment{
+    padding:10px;
+}
+
+.staff-sp{
+    display: none;
+}
+
+/* レスポンシブ */
+@media screen and (max-width:480px){
+    .staffs{
+        display:flex;
+        flex-direction: column;
+    }
+
+    .staff-pc{
+        display: none;
+    }
+
+    .staff-sp{
+        display:block;
+    }
+    
+    summary{
+        display:block;
+    }
+
+    .face{
+        margin: 0px;;
+    }
+}
+
+/* フッター */
+#foot{
+    background-color: #d5e9ffd8;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height:50px;
+    margin: 0px;
+}
+
+.icon{
+    width:100px;
+    height:40px;
+    padding:5px;
+    object-fit: contain;
+}
+
+.home{
+    display: block;
+    align-items: center;
+}
+
+.nav2{
+    display:block;
+    height:30px;
+    align-items: center;
+}
+
+.a2{
+    color:#5a7ada;
+    padding:10px;
+    text-decoration: none;
+}
+
+/* レスポンシブ */
+@media screen and (max-width:480px){
+    #foot{
+        display: flex;
+        flex-direction: column;
+        height:auto;
+        padding:15px;
+    }
+
+    .home{
+        display:block;
+    }
+
+    .nav2{
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        height:auto;
+    }
+
+    .a2{
+        padding: 0px;
+    }
+}

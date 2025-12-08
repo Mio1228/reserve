@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style-reserve.css">
+    <title>さわやかクリニック/予約</title>
+</head>
+<body>
+    <div id="form">
+        <div>
+            <h1>予約フォーム</h1>
+        </div>
+
+        <div class="form">
+            <form method="post">
+                <label for="name">名前</label>
+                <input type="text" placeholder="ヤマダタロウ" required>
+                <br>
+                <label for="cellnumber">電話番号</label>
+                <input type="text" required>
+                <br>
+                <label fpr="mail">メールアドレス</label>
+                <input type="text" size="60" required>
+                <br>
+                <label for="date">希望日</label>
+                <input type="date" required>
+                <br>
+                <label for="time">希望時間</label>
+                <select name= "time" required>
+                    <option value="">選択してください</option>
+                    <option value="9:30">9:30</option>
+                    <option value="10:00">10:00</option>
+                    <option value="10:30">10:30</option>
+                    <option value="11:00">11:00</option>
+                    <option value="11:30">11:30</option>
+                    <option value="12:00">12:00</option>
+                    <option value="12:30">12:30</option>
+                    <option value="14:00">14:00</option>
+                    <option value="14:30">14:30</option>
+                    <option value="15:00">15:00</option>
+                    <option value="15:30">15:30</option>
+                    <option value="16:00">16:00</option>
+                    <option value="16:30">16:30</option>
+                    <option value="17:00">17:00</option>
+                    <option value="17:30">17:30</option>
+                    <option value="18:00">18:00</option>
+                </select>
+                <br>
+                <label for="question">気になること</label>
+                <div class="content">
+                    <label class="checkbox"><input type="checkbox">虫歯</label>
+                    <label class="checkbox"><input type="checkbox">歯の痛み</label>
+                    <label class="checkbox"><input type="checkbox">歯にしみる</label>
+                    <label class="checkbox"><input type="checkbox">歯並び</label>
+                    <label class="checkbox"><input type="checkbox">歯茎の腫れ</label>
+                    <label class="checkbox"><input type="checkbox">歯茎からの出血</label>
+                    <label class="checkbox"><input type="checkbox">親知らず</label>
+                    <label class="checkbox"><input type="checkbox">歯の汚れ</label>
+                    <label class="checkbox"><input type="checkbox">顎の痛み</label>
+                </div>
+                <br>
+                <label for="detail">備考</label>
+                <textarea cols="40" rows="5"></textarea>
+
+                <button type="submit">予約する</button>
+            </form>
+        </div>
+        </div>
+    <div id="go-home">
+        <a class="top-button" href="index.html">ホームに戻る</a>
+    </div>
+  
+</body>
+</html>
