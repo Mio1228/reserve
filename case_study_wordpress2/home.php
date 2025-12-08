@@ -57,21 +57,29 @@
                 $posts = get_posts($args);
             ?>
             <!-- ループ処理 -->
-            <?php foreach($posts as $post): ?>
-            <?php setup_postdata($post); ?>
-                <div class="news_post_small">
-                     <div class="news_post_meta">
-                        <ul class="D">
-                            <li>
-                                <a href="<?php echo the_permalink() ;?>"><?php echo get_the_date() ;?></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="news_post_small_title">
-                        <a href="<?php get_the_permalink() ;?>"><?php the_title();?></a>
-                    </div>
-                </div>
-            <?php endforeach; ?>
+           <?php foreach ($posts as $post): ?>
+        <?php setup_postdata($post); ?>
+
+        <div class="news_post_small">
+            <div class="news_post_meta">
+                <ul class="D">
+                    <li>
+                        <a href="<?php the_permalink(); ?>">
+                            <?php echo get_the_date(); ?>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="news_post_small_title">
+                <a href="<?php the_permalink(); ?>">
+                    <?php the_title(); ?>
+                </a>
+            </div>
+        </div>
+
+        <?php endforeach; ?>
+        <?php wp_reset_postdata(); ?>
         </div>
     </div>
 

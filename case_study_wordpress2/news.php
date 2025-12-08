@@ -49,9 +49,16 @@
     <main>
         <?php if(have_posts()): ?>
             <?php while(have_posts()) : the_post() ;?>
+
+                <?php
+                    $cat = get_the_category();
+                    $catslug = $cat[0] -> slug;
+                    $catname =$cat[0] -> cat_name;
+                ?>
+
                 <div class="news.detail">
                     <div class="news_detail_title">
-                        <h2><?php the_title() ;?></h2>
+                        <h2><?php echo $catname ;?></h2>
                     </div>
                     <div class="news_date">
                         <?php the_date() ;?>
