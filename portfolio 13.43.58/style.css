@@ -1,0 +1,543 @@
+/*
+Theme Name: portfolio
+Theme URI: https://www.sejuku.net/
+Description: SAMURAI ENGINEERのWordPress教材
+Version: 1.0.0
+Author: SAMURAI ENGINEER
+Author URI: https://www.sejuku.net/
+*/
+
+
+body{
+    margin:0px;
+    padding:0px;
+    font-family: "Zain", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    background-color: rgba(245, 245, 245, 0.702);
+}
+
+/* ヘッダー */
+#head{
+    background-image: url("./img/\ Portfolio.png");
+    width:100%;
+    height:400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-bottom: 40px;
+}
+
+#nav-pc{
+    margin:10px;
+    color:black;
+    font-family:"Zain", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    position:fixed;
+    right:10px;
+    top:30px;
+    background-color: rgba(255, 255, 255, 0.77);
+    z-index: 3;
+}
+
+#nav-sp{
+    display:none;
+}
+
+#menu-sp{
+    display:none;
+}
+
+#log-sp{
+    display: none;
+}
+
+.nav{
+    margin:15px;
+    list-style: none;
+    display:flex;
+    flex-direction:column;
+    padding:10px;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+    padding:10px;
+}
+
+a:hover{
+    cursor: pointer;
+    color: rgb(244, 171, 53);
+    text-decoration: underline solid 1px rgb(244, 171, 53);
+}
+
+li{
+    padding: 10px;
+}
+
+/* スマホ */
+@media screen and (max-width: 480px){
+    #head{
+        background-image: url("./img/Mio\ Portfolio-sp.png");
+        background-image: contain;
+        height:250px;
+        position: relative;
+    }
+
+    #nav-pc{
+        display: none;
+    }
+
+    #nav-sp{
+        display: block;
+        position:fixed;
+        color:black;
+        font-family:"Zain", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 25px;
+        right: 10px;
+        background-color: rgba(255, 255, 255, 0.88);
+        width:150px;
+        height:200px;
+    }
+
+    .nav{
+        display: flex;
+        flex-direction: column;
+        margin:10px;
+        padding:0px;
+        font-size: 15px;
+    }
+
+    a:hover{
+        cursor: pointer;
+        color: rgb(218, 153, 48);
+        text-decoration: underline solid 1px rgb(218, 153, 48);
+    }
+
+    li{
+        padding: 0px;;
+    }
+
+    #menu-sp{
+        display: block;
+        padding: 0px;
+        border:none;
+        width:50px;
+        height:50px;
+        position:fixed;
+        right:10px;
+        margin: 10px;
+        object-fit: contain;
+    }
+
+    .frame1{
+        width:50px;
+        height:50px;
+    }
+
+    #close{
+        right:10px;
+        border:none;
+        background-color: transparent;
+        font-size: 20px;
+    }
+}
+
+
+/* about */
+.title{
+    margin:10px 20px;
+    padding-left: 10px;
+    font-size: 50px;
+    border-left: solid 15px  rgb(40, 162, 233);
+}
+
+#about{
+    margin:80px 15px;
+}
+
+.profile{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+}
+
+.img{
+    width:30%;
+}
+
+.image{
+    width:70%;
+    margin-left:40px;
+    padding:20px;
+    border-radius: 100%;
+    background-color: white;
+}
+
+.content{
+    background-color: white;
+    margin:20px;
+    padding:20px;
+    width:65%;
+    border-radius: 10px;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+}
+
+.other{
+    display: flex;
+    flex-direction: row;
+}
+
+.sub-title{
+    font-family: "Zain", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size:40px;
+    text-align: center;
+    text-decoration: underline dashed 3px  rgb(40, 162, 233);
+    margin: 0px;
+}
+
+#skill{
+    background-color: white;
+    margin:20px;
+    border-radius: 20px;
+    padding:20px;
+    width: 30%;
+}
+
+.skill{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    justify-content: center;
+    padding: 0px;
+}
+
+.skill-list{
+    margin:0px 20px;
+    padding:10px;
+    list-style: none;
+    font-size: 25px;
+    text-align: center;
+}
+
+#tool{
+    background-color: white;
+    margin:20px;
+    border-radius: 20px;
+    padding: 10px;
+    width: 30%;
+}
+
+.tool{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    justify-content: center;
+    padding: 0px;
+}
+
+.tool-list{
+    margin:0px 20px;
+    padding:10px;
+    list-style: none;
+    font-size: 25px;
+    text-align: center;
+}
+
+#time{
+    background-color: white;
+    margin:20px;
+    border-radius: 20px;
+    padding: 10px;
+    width: 30%;
+}
+
+.time{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    justify-content: center;
+    padding:0px;
+}
+
+.time-list{
+    margin:0px 20px;
+    padding:10px;
+    list-style: none;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* スマホ */
+@media screen and (max-width: 480px){
+    .profile{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+h2{
+    text-align: center;
+    margin:10px;
+}
+
+.img{
+    width:40%;
+}
+
+.image{
+    margin:0px;
+}
+
+.content{
+    padding:10px;
+}
+
+.other{
+    display: flex;
+    flex-direction: column;
+}
+
+#skill, #tool, #time{
+    width:80%;
+}
+}
+
+
+/* WORKS */
+#works{
+    margin:80px 15px;
+}
+
+@keyframes infinity-scroll-left {
+from {
+  transform: translateX(0);
+}
+  to {
+  transform: translateX(-100%);
+}
+}
+.scroll-infinity__wrap {
+  display: flex;
+  overflow: hidden;
+  width:80%;
+  margin:auto;
+  background-color: white;
+}
+.scroll-infinity__list {
+  display: flex;
+  list-style: none;
+  padding: 0
+}
+.scroll-infinity__list--left {
+  animation: infinity-scroll-left 80s infinite linear 0.5s both;
+  display: flex;
+  align-items: center;
+  margin: 0px;
+}
+.scroll-infinity__item {
+  width: calc(100vw / 3);
+}
+.scroll-infinity__item>img {
+  width: 100%;
+}
+
+@media screen and (max-width: 480px){
+    .scroll-infinity__item{
+        width:calc(100vw /3);
+        padding:10px;
+    }
+}
+
+.works{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.more{
+    font-size: 30px;
+    margin: 20px auto;
+    background-color:rgb(150, 212, 248) ;
+    border-radius: 30px;
+    padding:10px 20px;
+    box-shadow: 0px 0px 5px 0px black;
+}
+
+.more:hover{
+    color:white;
+    text-decoration: none;
+    box-shadow: none;
+}
+
+
+/* service */
+#service{
+    margin:80px 15px;
+}
+
+.service{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 20px;
+}
+
+.service-content{
+    width: 30%;
+    height:320px;
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border:dashed black 1px;
+}
+
+.photo{
+    width: 80%;
+    height:60%;
+    object-fit: cover;
+}
+
+.service-name{
+    text-align: center;
+    margin:0px;
+    font-family: "Zain", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 25px;
+    padding: 5px;
+}
+
+.service-name::first-letter{
+    color: rgb(40, 162, 233) ;
+}
+
+.service-detail{
+    padding:10px;
+    margin: 0px;
+}
+
+@media screen and (max-width: 480px){
+    .service{
+        flex-direction: column;
+    }
+
+    .service-content{
+        width: 80%;
+    }
+}
+
+
+/* contact */
+
+
+
+
+
+
+/* 作品一覧ページ */
+#header{
+    background-image: url("./img/\ Portfolio.png");
+    width:100%;
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-bottom: 40px;
+}
+
+#work{
+    width: 100%;
+    
+}
+
+.title2{
+    text-align: center;
+    width:250px;
+    margin:auto;
+    border-bottom: solid 0.5px black;
+}
+
+.title2::first-letter{
+    color: rgb(40, 162, 233);
+}
+
+.sub-title2{
+    font-family: "Zain", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    width: 250px;
+    text-align: center;
+    margin: auto;
+    padding:3px;
+}
+
+.category{
+    list-style: none;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.category-list{
+    padding:5px 10px;
+    margin:10px;
+    border: solid 0.5px black;
+}
+
+.all-works{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:90%;
+    align-items: center;
+    margin: auto;
+    gap:30px;
+}
+
+.work-ex{
+    width:45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.work-img{
+    width:80%;
+}
+
+.work-category{
+    font-family: "Zain", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    text-align: left;
+    margin: 0px;
+    margin-top: 10px;
+    padding:0px 10px;
+    background-color:  rgba(40, 162, 233, 0.822);
+    color:white;
+}
+
+.work-name{
+    font-family: "Zain", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    margin: 5px 0px;
+
+}
